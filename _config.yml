@@ -15,19 +15,19 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "zh-CN" #"en-US"
+title                    : "乔治PM爱编程" # "Site Title"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "制造一些他人喜欢的东西，需要产品经理懂得造什么，以及程序员用什么技术造出来" # site tagline that appears below site title in masthead
+name                     : "George Donne" #"Your Name"
+description              : "A Product Manager Loving Coding" #"An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo-apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)  -- activated by George on 2023-10-18
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -58,9 +58,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+  hide                   : true # true, false (default) -- activated by George on 2023-10-18
+search                   : true # true, false (default)  -- activated by George on 2023-10-28
+search_full_content      : true # true, false (default) -- activated by George on 2023-10-28
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
@@ -104,30 +104,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    name             : "George Donne" # "Your Name"
+    avatar           : "/assets/images/george.PNG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+    bio              : "A Product Manager loves coding..." # "I am an **amazing** person."
+    location         : "Jiangsu, China" # "Somewhere"
+    email            : # GeorgeDonneV2@outlook.com
+    links:
+      - label : "Email"
+        icon  : "fas fa-fw fa-envelope-square"  
+        url   : "mailto:GeorgeDonneV2@outlook.com"
+      - label: "Website"
+        icon: "fas fa-fw fa-link"
+        # url: "https://your-website.com"
+      - label: "Twitter"
+        icon: "fab fa-fw fa-twitter-square"
+        # url: "https://twitter.com/"
+      - label: "Facebook"
+        icon: "fab fa-fw fa-facebook-square"
+        # url: "https://facebook.com/"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        # url: "https://github.com/"
+      - label: "Instagram"
+        icon: "fab fa-fw fa-instagram"
+        # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: https://github.com/georgedonne
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -218,9 +218,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -252,10 +252,12 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /posts-by-cats/ #/categories/
+
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /posts-by-tags/ #/tags/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -288,5 +290,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: # true
       related: true
+      show_date: true # add by George on 2023-10-17
+
+date_format: "%Y-%m-%d" # added by George on 2023-10-18
