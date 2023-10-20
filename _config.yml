@@ -254,9 +254,9 @@ category_archive:
   type: liquid
   path: /posts-by-cats/ #/categories/
 
-tag_archive:
-  type: liquid
-  path: /posts-by-tags/ #/tags/
+# tag_archive:
+#  type: liquid
+#  path: /posts-by-tags/ #/tags/
 
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
@@ -292,6 +292,16 @@ defaults:
       comments: # true
       share: # true
       related: true
-      show_date: true # add by George on 2023-10-17
+      show_date: #true # add by George on 2023-10-17
 
-date_format: "%Y-%m-%d" # added by George on 2023-10-18
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+# date_format: "%Y-%m-%d" # added by George on 2023-10-18
+date_format: "%Y-%m-%d %H:%M:%S" # added by George on 2023-10-19

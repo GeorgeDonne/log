@@ -10,4 +10,4 @@ classes: wide
 #header:
 #    teaser: /assets/images/mm-teaser-website.png
 ---
-按[年份](/posts-by-year/)，按[类别](/posts-by-cats/)
+按：<i class="fas fa-fw fa-calendar-alt"></i>[年份](/posts-by-year/)，<i class="fas fa-fw fa-folder-plus"></i>[类别](/posts-by-cats/)

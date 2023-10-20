@@ -26,6 +26,10 @@ toc_label: "目录"
 toc_icon: "fas fa-folder-plus"
 toc_sticky: true
 
+header:
+  image: /assets/images/unsplash-image-1.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+
 excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
@@ -33,6 +37,10 @@ header:
   actions:
     - label: "More Info"
       url: "https://unsplash.com"
+    - label: "Foo Button"
+      url: "#foo"
+    - label: "Bar Button"
+      url: "#bar"
 ---
 
 # 复制mm theme
@@ -106,6 +114,9 @@ Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part II。（[链接
 
 - mm-theme 的 Configuration。([链接](https://mmistakes.github.io/minimal-mistakes/docs/configuration/))
 - mm-theme 的 Layout。([链接](https://mmistakes.github.io/minimal-mistakes/docs/layouts/))
+- mm-theme 的 Utility Classes。([链接](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/))
+- mm-theme 的 Helper。([链接](https://mmistakes.github.io/minimal-mistakes/docs/helpers/))
+
 
 ## 删除文件
 
@@ -225,7 +236,6 @@ Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part II。（[链接
     author_profile: true
     entries_layout: grid # grid视图
     classes: wide
-
     ---
     按[年份](/posts-by-year/)
     ```
@@ -255,6 +265,43 @@ Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part II。（[链接
   - `layout: single` 是比较合适的
   - `layout: single` + `classes: wide` 也是不错的。 
   - `layout: splash` 不大合适。  
+
+- 页面顶部显示大幅图片
+  - 在Front Matter 增加 `header > image : /assets/images/photo.png` 即可实现。
+  - 适用于：根目录的 index.html，_posts 目录下各个博客。
+  - 比如在根目录 index.html 的Front Matter增加如下：
+    ```yaml
+    ---
+    header:
+    image: /assets/images/unsplash-image-1.jpg
+    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+    ---
+    ```
+
+- 在社交媒体分享博客
+  - 在某个博客布局是 `layout: single`，则可在该博客的Front Matter 设置 `share: true`，打开社交媒体分享。
+  - 分享哪些社交媒体，可以更改 `_includes/social-share.html`。
+
+- 修改正文字体大小
+  - 修改 `_sass/minimal-mistakes/_page.scss`
+  - 找到 `.page__content`，修改 p li dl 的 font-size。比如从 1em 改为 0.9em。
+    ```css
+    .page__content {
+      p,
+      li,
+      dl {
+        font-size: 0.9em; /* update from 1em to 0.9em, by George on 2023-10-19*/
+      }
+    }
+    ```
+- 修改宽度
+My MacBook Pro has dimensions larger than $max-width specified in _page.scss like so:
+
+@include breakpoint($x-large) {
+    max-width: $max-width;
+  }
+$max-width currently is 1280px and lives in _variables.scss. I have increased it to 1400px to have more space for content.
+
 
 # 信息
 
