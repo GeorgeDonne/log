@@ -29,11 +29,13 @@
 
     @include breakpoint($large) {
       float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      /*width: calc(100% - #{$right-sidebar-width-narrow});*/
+      width: 100%; /*update to 100% by George on 2023-10-25*/
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      /*width: calc(100% - #{$right-sidebar-width});*/
+      width: 100%; /*update to 100% by George on 2023-10-25*/
     }
   }
 

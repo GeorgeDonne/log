@@ -38,12 +38,14 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    /*width: calc(100% - #{$right-sidebar-width-narrow});*/
+    width: 100%; /*update width to 100% by George on 2023-10-25 */
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    /*width: calc(100% - #{$right-sidebar-width});*/
+    width: 100%; /*update width to 100% by George on 2023-10-25 */
     padding-right: $right-sidebar-width;
   }
 
@@ -113,7 +115,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em; 
+    font-size: 0.9em; /*update from 1em to 0.9em, by George on 2023-10-25*/ 
   }
 
   /* paragraph indents */
@@ -532,11 +534,13 @@ body {
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    /*width: calc(100% - #{$right-sidebar-width-narrow});*/
+    width: 100%; /*update width to 100% by George on 2023-10-25*/
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    /*width: calc(100% - #{$right-sidebar-width});*/
+    width: 100%; /*update width to 100% by George on 2023-10-25*/
   }
 
   a {

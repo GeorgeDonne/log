@@ -2,6 +2,8 @@
 header:
     teaser: "/assets/images/mm-teaser-cool-stuff.jpeg"
 
+classes: xwide
+author_profile: false
 tags:
   - cool stuff
   - testing

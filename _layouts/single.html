@@ -19,7 +19,7 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  {% include sidebar.html %}
+  <!--{% include sidebar.html %} delete by George on 2023-10-25, according to  https://github.com/SamouczekProgramisty/samouczekprogramisty.github.io/commit/9f9c082568226b3b123bfd868bb3bee86e6960c5?diff=split -->
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

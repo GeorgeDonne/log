@@ -1,6 +1,6 @@
 ---
 layout : single
-classes: wide
+# classes: wide
 canonical_url: # "https://yoursite.com/custom-canonical-url"
 header:
     teaser: /assets/images/mm-teaser-website.png
@@ -302,6 +302,15 @@ My MacBook Pro has dimensions larger than $max-width specified in _page.scss lik
   }
 $max-width currently is 1280px and lives in _variables.scss. I have increased it to 1400px to have more space for content.
 
+- 修改链接颜色
+$link-color: #007bb6 !default; /* add by George on 2023-10-21 */
+
+- //修改toc位置
+https://github.com/mmistakes/minimal-mistakes/issues/1298
+
+- 修改宽度
+  - Ability to disable left sidebar in single layout #1322，https://github.com/mmistakes/minimal-mistakes/issues/1322
+  - 修改navigation.scss 中的面包屑，类似修改width 100%
 
 # 信息
 
@@ -333,6 +342,10 @@ defaults: # 可以有多个scope/values对
 修改了一些 url 的设置后，用 jekyll build 重新构建，发现在 _site 下没有生成期望的目录。
 此时，可以执行 bundle exec jekyll build，就可以看到 _site 下生成期望的目录了。
 
+## 有用的总结
+
+https://www.fabriziomusacchio.com/blog/2021-08-11-Minimal_Mistakes_Cheat_Sheet/
+https://www.fabriziomusacchio.com/blog/2021-08-12-Liquid_Cheat_Sheet/
 
 # TTD
 
