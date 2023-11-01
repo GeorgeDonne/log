@@ -7,7 +7,8 @@ header:
 
 show_date: true
 #last_modified_at: 2023-10-19T16:20:02-05:00
-last_modified_at: 2023-10-19T16:20:02-05:00 # unknown to display time, by George on 2023-10-19
+date: 2023-10-30T12:00:00+08:00
+last_modified_at: 2023-10-30T12:14:00-05:00 # unknown to display time, by George on 2023-10-19
 
 tags:
   - minimal-mistakes theme
@@ -347,11 +348,16 @@ defaults: # 可以有多个scope/values对
 https://www.fabriziomusacchio.com/blog/2021-08-11-Minimal_Mistakes_Cheat_Sheet/
 https://www.fabriziomusacchio.com/blog/2021-08-12-Liquid_Cheat_Sheet/
 
+# 一些有用的tips
+
+- 用{:.notice}编写一些摘要等。即醒目又方便。
+
 # TTD
 
 - 2023-10-17 -- 待学习 kramdown
 - 2023-10-18 -- 待设置 site.comment
 - 2023-10-19 -- 待学习 Jekyll 的 collection
 - 2023-10-19 -- 待学习“如何在md中引用图标”
+- 2023-10-26 -- author_profile: false 不写时，顶部出现一些不期望的文字，可能是sidebar没有处理好。
 
 - 关闭//2023-10-17 -- 待学习 Jekyll 的 default 如何设置

@@ -46,6 +46,21 @@ feature_row:
 
 ---
 
+# cs--button
+
+[default text .btn](){: .btn}  
+[Primary	Text	.btn .btn--primary](#link){: .btn .btn--primary}
+
+Button Type	Example	Class	Kramdown
+Default	Text	.btn	[Text](/){: .btn}
+Primary	Text	.btn .btn--primary	[Text](#link){: .btn .btn--primary}
+Success	Text	.btn .btn--success	[Text](#link){: .btn .btn--success}
+Warning	Text	.btn .btn--warning	[Text](#link){: .btn .btn--warning}
+Danger	Text	.btn .btn--danger	[Text](#link){: .btn .btn--danger}
+Info	Text	.btn .btn--info	[Text](#link){: .btn .btn--info}
+Inverse	Text	.btn .btn--inverse	[Text](#link){: .btn .btn--inverse}
+Light Outline	Text	.btn .btn--light-outline	[Text](#link){: .btn .btn--light-outline}
+
 # cs--feature-row
 
 {% include feature_row %}
@@ -77,8 +92,22 @@ assets/images/logo-apple-touch-icon.png
 
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don’t want them littering up your repo.
 {:.notice--info}
-hint: text above is in 'notice--info' style.
 
-Note: The theme uses the jekyll-include-cache plugin which will need to be installed in your Gemfile and added to the plugins array of _config.yml. Otherwise you’ll throw Unknown tag 'include_cached' errors at build.
-{:.notice--warning}
+kramdown代码如下：
+```md
+**ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don’t want them littering up your repo.
+{:.notice--info}
+```
+**Watch out!** This paragraph of text has been [emphasized](/) with the `{: .notice}` class.
+{: .notice}
+**Watch out!**This paragraph of text has been [emphasized](/) with the `{: .notice--primary}` class.
+{: .notice--primary}
+**Watch out!**This paragraph of text has been [emphasized](/) with the `{: .notice--info}` class.
+{: .notice--info}
+**Watch out!**This paragraph of text has been [emphasized](/) with the `{: .notice--warning}` class.
+{: .notice--warning}
+**Watch out!**This paragraph of text has been [emphasized](/) with the `{: .notice--success}` class.
+{: .notice--success}
+**Watch out!**This paragraph of text has been [emphasized](/) with the `{: .notice--danger}` class.
+{: .notice--danger}
 

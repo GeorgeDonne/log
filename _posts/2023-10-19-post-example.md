@@ -6,8 +6,7 @@ header:
     teaser: /assets/images/mm-teaser-website.png
 
 show_date: true
-#last_modified_at: 2023-10-19T16:20:02-05:00
-last_modified_at: 2023-10-19T16:20:02-05:00 # unknown to display time, by George on 2023-10-19
+# last_modified_at: 2023-10-19T16:20:02-05:00 # update by jekyll automatically, DO NOT set 'last_modified_at'.
 
 tags:
   - exampl post
