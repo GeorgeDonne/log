@@ -8,7 +8,7 @@ header:
 show_date: true
 #last_modified_at: 2023-10-19T16:20:02-05:00
 date: 2023-10-30T12:00:00+08:00
-last_modified_at: 2023-10-30T12:14:00-05:00 # unknown to display time, by George on 2023-10-19
+#last_modified_at: 2023-10-30T12:14:00-05:00 # unknown to display time, by George on 2023-10-19
 
 tags:
   - minimal-mistakes theme
